@@ -13,7 +13,9 @@
 		1029D25D1EB5FBBA00FE76C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1029D25C1EB5FBBA00FE76C5 /* Assets.xcassets */; };
 		1029D2601EB5FBBA00FE76C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1029D25E1EB5FBBA00FE76C5 /* LaunchScreen.storyboard */; };
 		1029D2691EB5FC6000FE76C5 /* FaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1029D2681EB5FC6000FE76C5 /* FaceView.swift */; };
+		103C9AEC1EB6CFEA00BD0285 /* EmotionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103C9AEB1EB6CFEA00BD0285 /* EmotionViewController.swift */; };
 		104131141EB621DF00B9050B /* FacialExpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104131131EB621DF00B9050B /* FacialExpression.swift */; };
+		1055A66B1EB6E0D200825639 /* VLC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1055A66A1EB6E0D200825639 /* VLC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +27,9 @@
 		1029D25F1EB5FBBA00FE76C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1029D2611EB5FBBA00FE76C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1029D2681EB5FC6000FE76C5 /* FaceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceView.swift; sourceTree = "<group>"; };
+		103C9AEB1EB6CFEA00BD0285 /* EmotionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmotionViewController.swift; sourceTree = "<group>"; };
 		104131131EB621DF00B9050B /* FacialExpression.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacialExpression.swift; sourceTree = "<group>"; };
+		1055A66A1EB6E0D200825639 /* VLC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VLC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +63,12 @@
 			isa = PBXGroup;
 			children = (
 				1029D2571EB5FBBA00FE76C5 /* FaceViewController.swift */,
-				104131131EB621DF00B9050B /* FacialExpression.swift */,
 				1029D2591EB5FBBA00FE76C5 /* Main.storyboard */,
+				103C9AEB1EB6CFEA00BD0285 /* EmotionViewController.swift */,
 				1029D2681EB5FC6000FE76C5 /* FaceView.swift */,
+				104131131EB621DF00B9050B /* FacialExpression.swift */,
 				1029D2671EB5FBD200FE76C5 /* Supoorting Files */,
+				1055A66A1EB6E0D200825639 /* VLC.swift */,
 			);
 			path = FaceIt;
 			sourceTree = "<group>";
@@ -151,8 +157,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				103C9AEC1EB6CFEA00BD0285 /* EmotionViewController.swift in Sources */,
 				1029D2581EB5FBBA00FE76C5 /* FaceViewController.swift in Sources */,
 				104131141EB621DF00B9050B /* FacialExpression.swift in Sources */,
+				1055A66B1EB6E0D200825639 /* VLC.swift in Sources */,
 				1029D2561EB5FBBA00FE76C5 /* AppDelegate.swift in Sources */,
 				1029D2691EB5FC6000FE76C5 /* FaceView.swift in Sources */,
 			);
