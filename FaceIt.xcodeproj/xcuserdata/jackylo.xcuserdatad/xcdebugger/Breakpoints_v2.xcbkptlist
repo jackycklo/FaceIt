@@ -67,5 +67,53 @@
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FaceIt/EyeView.swift"
+            timestampString = "515513053.554008"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "eyesOpen"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FaceIt.EyeView.eyesOpen.setter : Swift.Bool"
+                  moduleName = "FaceIt"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jackylo/test/testprojects/ios/FaceIt/FaceIt/EyeView.swift"
+                  timestampString = "515513054.003724"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "111">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FaceIt.EyeView.(eyesOpen.setter : Swift.Bool).(closure #1)"
+                  moduleName = "FaceIt"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jackylo/test/testprojects/ios/FaceIt/FaceIt/EyeView.swift"
+                  timestampString = "515513054.005369"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "30">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
