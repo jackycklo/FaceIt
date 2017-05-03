@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1017DB991EBA0EB10056FB0D /* BlinkingFaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1017DB981EBA0EB10056FB0D /* BlinkingFaceViewController.swift */; };
 		1029D2561EB5FBBA00FE76C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1029D2551EB5FBBA00FE76C5 /* AppDelegate.swift */; };
 		1029D2581EB5FBBA00FE76C5 /* FaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1029D2571EB5FBBA00FE76C5 /* FaceViewController.swift */; };
 		1029D25B1EB5FBBA00FE76C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1029D2591EB5FBBA00FE76C5 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1017DB981EBA0EB10056FB0D /* BlinkingFaceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlinkingFaceViewController.swift; sourceTree = "<group>"; };
 		1029D2521EB5FBBA00FE76C5 /* FaceIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FaceIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1029D2551EB5FBBA00FE76C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1029D2571EB5FBBA00FE76C5 /* FaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 		1029D2541EB5FBBA00FE76C5 /* FaceIt */ = {
 			isa = PBXGroup;
 			children = (
+				1017DB981EBA0EB10056FB0D /* BlinkingFaceViewController.swift */,
 				1029D2571EB5FBBA00FE76C5 /* FaceViewController.swift */,
 				1029D2591EB5FBBA00FE76C5 /* Main.storyboard */,
 				103C9AEB1EB6CFEA00BD0285 /* EmotionViewController.swift */,
@@ -161,6 +164,7 @@
 				1029D2581EB5FBBA00FE76C5 /* FaceViewController.swift in Sources */,
 				104131141EB621DF00B9050B /* FacialExpression.swift in Sources */,
 				1055A66B1EB6E0D200825639 /* VLC.swift in Sources */,
+				1017DB991EBA0EB10056FB0D /* BlinkingFaceViewController.swift in Sources */,
 				1029D2561EB5FBBA00FE76C5 /* AppDelegate.swift in Sources */,
 				1029D2691EB5FC6000FE76C5 /* FaceView.swift in Sources */,
 			);
