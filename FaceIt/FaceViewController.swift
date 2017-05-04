@@ -83,12 +83,13 @@ class FaceViewController: UIViewController {
                             if finished {
                                 UIView.animate(
                                     withDuration: HeadShake.segmentDuration,
-                                    animations: { self.rotateFace(by: HeadShake.angle) },
-                                    completion: {(finished) in
-                                        if finished {
-                                            
-                                        }
-                                }
+                                    animations: { self.rotateFace(by: HeadShake.angle) }
+//                                    ,
+//                                    completion: {(finished) in
+//                                        if finished {
+//                                            
+//                                        }
+//                                }
                                 )
                             }
                     }
@@ -145,12 +146,15 @@ class FaceViewController: UIViewController {
     private var mouthCurvatures = [FacialExpression.Mouth.Frown:-1.0,.Grin:0.5,.Smile:1.0,.Smirk:-0.5,.Neutral:0.0 ]
     private var eyeBrowTilts = [FacialExpression.EyeBrows.Relaxed:0.5,.Furrowed:-0.5,.Normal:0.0]
     
-    private func updateUI() {
+    //private
+    func updateUI() {
         if faceView != nil {
             switch expression.eyes {
             case .Open: faceView.eyesopen = true
             case .Closed: faceView.eyesopen = false
-            case .Squinting: faceView.eyesopen = false
+            case .Squinting:
+                //faceView.eyesopen = false
+                break
             }
             faceView.mouthCurvature = mouthCurvatures[expression.mouth] ?? 0.0
             faceView.eyeBrowTilt = eyeBrowTilts[expression.eyeBrows] ?? 0.0
