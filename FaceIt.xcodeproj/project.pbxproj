@@ -18,6 +18,7 @@
 		103C9AEC1EB6CFEA00BD0285 /* EmotionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103C9AEB1EB6CFEA00BD0285 /* EmotionViewController.swift */; };
 		104131141EB621DF00B9050B /* FacialExpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104131131EB621DF00B9050B /* FacialExpression.swift */; };
 		1055A66B1EB6E0D200825639 /* VLC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1055A66A1EB6E0D200825639 /* VLC.swift */; };
+		106FACFA1EBB260500DB05E0 /* ExpressionEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106FACF91EBB260500DB05E0 /* ExpressionEditorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		103C9AEB1EB6CFEA00BD0285 /* EmotionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmotionViewController.swift; sourceTree = "<group>"; };
 		104131131EB621DF00B9050B /* FacialExpression.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacialExpression.swift; sourceTree = "<group>"; };
 		1055A66A1EB6E0D200825639 /* VLC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VLC.swift; sourceTree = "<group>"; };
+		106FACF91EBB260500DB05E0 /* ExpressionEditorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpressionEditorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				1017DB981EBA0EB10056FB0D /* BlinkingFaceViewController.swift */,
 				1029D2571EB5FBBA00FE76C5 /* FaceViewController.swift */,
 				1029D2591EB5FBBA00FE76C5 /* Main.storyboard */,
+				106FACF91EBB260500DB05E0 /* ExpressionEditorViewController.swift */,
 				103C9AEB1EB6CFEA00BD0285 /* EmotionViewController.swift */,
 				1029D2681EB5FC6000FE76C5 /* FaceView.swift */,
 				1017DB9A1EBA15E80056FB0D /* EyeView.swift */,
@@ -169,6 +172,7 @@
 				1055A66B1EB6E0D200825639 /* VLC.swift in Sources */,
 				1017DB991EBA0EB10056FB0D /* BlinkingFaceViewController.swift in Sources */,
 				1029D2561EB5FBBA00FE76C5 /* AppDelegate.swift in Sources */,
+				106FACFA1EBB260500DB05E0 /* ExpressionEditorViewController.swift in Sources */,
 				1017DB9B1EBA15E80056FB0D /* EyeView.swift in Sources */,
 				1029D2691EB5FC6000FE76C5 /* FaceView.swift in Sources */,
 			);
