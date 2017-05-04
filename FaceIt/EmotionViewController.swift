@@ -8,7 +8,8 @@
 
 import UIKit
 
-class EmotionViewController: UITableViewController {
+class EmotionViewController: UITableViewController, UIPopoverPresentationControllerDelegate
+{
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,6 +39,13 @@ class EmotionViewController: UITableViewController {
         ("worried", FacialExpression(eyes: .Open, eyeBrows: .Relaxed, mouth: .Smirk)),
         ("mischievious", FacialExpression(eyes: .Open, eyeBrows: .Furrowed, mouth: .Grin)),
         ]
+    
+    @IBAction func addEmotionalFace(from segue: UIStoryboardSegue) {
+        if let editor = segue.source as? ExpressionEditorViewController {
+            emotionFaces.append((editor.name, editor.expression))
+            tableView.reloadData()
+        }
+    }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return emotionFaces.count
@@ -75,8 +83,28 @@ class EmotionViewController: UITableViewController {
             let indexPath = tableView.indexPath(for: cell) {
             facevc.expression = emotionFaces[indexPath.row].expression
             facevc.navigationItem.title = (sender as? UIButton)?.currentTitle
+        } else if destinationvc is ExpressionEditorViewController {
+            if let popoverPresentationController = segue.destination.popoverPresentationController {
+                popoverPresentationController.delegate = self
+            }
         }
         
+    }
+    
+    func adaptivePresentationStyle(
+        for controller: UIPresentationController,
+        traitCollection: UITraitCollection
+        ) -> UIModalPresentationStyle
+    {
+        //vertical compact : iphone
+        
+        if traitCollection.verticalSizeClass == .compact {
+            return .none //override default
+        } else if traitCollection.horizontalSizeClass == .compact {
+            return .overFullScreen
+        } else {
+            return .none
+        }
     }
     
     

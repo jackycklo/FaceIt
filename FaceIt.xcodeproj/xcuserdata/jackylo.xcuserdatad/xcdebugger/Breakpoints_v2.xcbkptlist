@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FaceIt/EmotionViewController.swift"
-            timestampString = "515581004.80852"
+            timestampString = "515585914.207574"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "62"
-            endingLineNumber = "62"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
             landmarkName = "prepare(for:sender:)"
             landmarkType = "7">
             <Locations>
@@ -118,7 +118,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FaceIt/ExpressionEditorViewController.swift"
@@ -131,14 +131,14 @@
             landmarkType = "24">
             <Locations>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "FaceIt.ExpressionEditorViewController.init (style : __C.UITableViewStyle) -&gt; FaceIt.ExpressionEditorViewController"
                   moduleName = "FaceIt"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/jackylo/test/testprojects/ios/Standfod/FaceIt/FaceIt/ExpressionEditorViewController.swift"
-                  timestampString = "515583766.170144"
+                  timestampString = "515583903.104485"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "28"
@@ -146,14 +146,14 @@
                   offsetFromSymbolStart = "30">
                </Location>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "FaceIt.ExpressionEditorViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; FaceIt.ExpressionEditorViewController"
                   moduleName = "FaceIt"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/jackylo/test/testprojects/ios/Standfod/FaceIt/FaceIt/ExpressionEditorViewController.swift"
-                  timestampString = "515583766.171888"
+                  timestampString = "515583903.107339"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "28"
@@ -161,14 +161,14 @@
                   offsetFromSymbolStart = "75">
                </Location>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "FaceIt.ExpressionEditorViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;FaceIt.ExpressionEditorViewController&gt;"
                   moduleName = "FaceIt"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/jackylo/test/testprojects/ios/Standfod/FaceIt/FaceIt/ExpressionEditorViewController.swift"
-                  timestampString = "515583766.173255"
+                  timestampString = "515583903.11016"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "28"

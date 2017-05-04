@@ -139,9 +139,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Emotion" id="8Up-IG-Fxj">
-                        <barButtonItem key="rightBarButtonItem" title="+" id="caz-CB-JZW">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="caz-CB-JZW">
                             <connections>
-                                <segue destination="TbA-he-ESB" kind="presentation" id="jcf-tH-hpP"/>
+                                <segue destination="TbA-he-ESB" kind="popoverPresentation" popoverAnchorBarButtonItem="caz-CB-JZW" id="jcf-tH-hpP">
+                                    <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                </segue>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -191,31 +193,18 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="130.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CbG-2Y-NhK" customClass="FaceView" customModule="FaceIt" customModuleProvider="target">
-                                                    <rect key="frame" x="67" y="1" width="240" height="128"/>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <userDefinedRuntimeAttributes>
-                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="eyesopen" value="YES"/>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="scale">
-                                                            <real key="value" value="0.90000000000000002"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="mouthCurvature">
-                                                            <real key="value" value="0.0"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="eyeBrowTilt">
-                                                            <real key="value" value="0.0"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
-                                                            <real key="value" value="5"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                    </userDefinedRuntimeAttributes>
-                                                </view>
+                                                <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vpc-Nx-DiQ">
+                                                    <rect key="frame" x="8" y="8" width="359" height="114.5"/>
+                                                    <connections>
+                                                        <segue destination="gpr-Fa-Non" kind="embed" identifier="Embed Face" id="l1x-AL-Q2a"/>
+                                                    </connections>
+                                                </containerView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="bottomMargin" secondItem="CbG-2Y-NhK" secondAttribute="bottom" constant="-6.5" id="0w6-Wz-mr4"/>
-                                                <constraint firstItem="CbG-2Y-NhK" firstAttribute="top" secondItem="prj-rM-CQx" secondAttribute="topMargin" constant="-7" id="4Oc-ay-Vnz"/>
-                                                <constraint firstItem="CbG-2Y-NhK" firstAttribute="leading" secondItem="prj-rM-CQx" secondAttribute="leadingMargin" constant="59" id="YAX-I9-eoV"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="CbG-2Y-NhK" secondAttribute="trailing" constant="60" id="j3R-Wa-gyz"/>
+                                                <constraint firstItem="Vpc-Nx-DiQ" firstAttribute="top" secondItem="prj-rM-CQx" secondAttribute="topMargin" id="8er-Px-OXy"/>
+                                                <constraint firstItem="Vpc-Nx-DiQ" firstAttribute="trailing" secondItem="prj-rM-CQx" secondAttribute="trailingMargin" id="DSO-x7-Aat"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Vpc-Nx-DiQ" secondAttribute="bottom" id="J48-1t-SMS"/>
+                                                <constraint firstItem="Vpc-Nx-DiQ" firstAttribute="leading" secondItem="prj-rM-CQx" secondAttribute="leadingMargin" id="haU-Ok-60D"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -289,6 +278,11 @@
                                 <action selector="cancel:" destination="jq5-Q3-n4t" id="bBE-rp-Raz"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="298-wt-2Gd">
+                            <connections>
+                                <segue destination="wm2-eC-Daf" kind="unwind" identifier="Add Emotion" unwindAction="addEmotionalFaceFrom:" id="cPv-UC-vT2"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="eyeControl" destination="OYs-Sy-ESs" id="uqd-Vp-DqF"/>
@@ -297,6 +291,7 @@
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="URU-dZ-2Ue" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="wm2-eC-Daf" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1528.8" y="-1354.2728635682161"/>
         </scene>
@@ -336,6 +331,58 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fZV-Ea-8LM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="589.60000000000002" y="-1354.2728635682161"/>
+        </scene>
+        <!--Blinking Face View Controller-->
+        <scene sceneID="hCG-Hd-ZF3">
+            <objects>
+                <viewController id="gpr-Fa-Non" customClass="BlinkingFaceViewController" customModule="FaceIt" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0W7-Mi-bXL"/>
+                        <viewControllerLayoutGuide type="bottom" id="JYN-w3-RW2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rTS-Zm-pqe">
+                        <rect key="frame" x="0.0" y="0.0" width="359" height="114.5"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="NkG-0x-Muh" customClass="FaceView" customModule="FaceIt" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="359" height="115"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" red="0.92247178819999998" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="scale">
+                                        <real key="value" value="0.80000000000000004"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="mouthCurvature">
+                                        <real key="value" value="-1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="eyesopen" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="eyeBrowTilt">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="NkG-0x-Muh" secondAttribute="bottom" id="LWU-mD-cd3"/>
+                            <constraint firstItem="NkG-0x-Muh" firstAttribute="leading" secondItem="rTS-Zm-pqe" secondAttribute="leading" id="XuB-9h-YlL"/>
+                            <constraint firstAttribute="trailing" secondItem="NkG-0x-Muh" secondAttribute="trailing" id="Zzc-MR-Ckg"/>
+                            <constraint firstItem="NkG-0x-Muh" firstAttribute="top" secondItem="rTS-Zm-pqe" secondAttribute="top" id="ed3-WS-Gnm"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="faceView" destination="NkG-0x-Muh" id="dIn-oB-EhN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F8R-3v-DnE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2269.5999999999999" y="-1511.6941529235382"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
